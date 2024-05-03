@@ -22,7 +22,7 @@ export const List = ({ courses, activeCourseId }: Props) => {
     if (id === activeCourseId) {
       return router.push("/learn");
     }
-
+//error case covering with toaster 
     startTransition(() => {
       upsertUserProgress(id).catch(() => toast.error("Something went wrong."));
     });
