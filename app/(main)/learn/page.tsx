@@ -1,11 +1,19 @@
-import { StickyWrapper } from "@/components/sticky-wrapper";
 import { FeedWrapper } from "@/components/feed-wrapper";
+import { StickyWrapper } from "@/components/sticky-wrapper";
 import { UserProgress } from "@/components/user-progress";
-
+import { getUserProgress } from "@/db/queries";
+import { redirect } from "next/navigation";
 import { Header } from "./header";
-import { title } from "process";
 
-const LearnPage = () => {
+const LearnPage = async () => {
+  const userProgressPromise = getUserProgress();
+
+  const [userProgress] = await Promise.all([userProgressPromise]);
+
+  if (!userProgress || !userProgress.activeCourse) {
+    redirect("/courses");
+  }
+
   return (
     <div className="flex flex-row-reverse gap-[48px] px-6">
       <StickyWrapper>
@@ -16,7 +24,6 @@ const LearnPage = () => {
           hasActiveSubscription={false}
         />
       </StickyWrapper>
-      {/* name of the course user will be taking  */}
       <FeedWrapper>
         <Header title="Spanish" />
       </FeedWrapper>

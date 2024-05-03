@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 type Props = {
@@ -13,13 +13,14 @@ type Props = {
 
 export const SidebarItem = ({ label, iconSrc, href }: Props) => {
   const pathname = usePathname();
-  const active = pathname == href;
+  const active = pathname === href;
 
   return (
     <Button
       variant={active ? "sidebarOutline" : "sidebar"}
       className="justify-start h-[52px]"
-      asChild>
+      asChild
+    >
       <Link href={href}>
         <Image
           src={iconSrc}
