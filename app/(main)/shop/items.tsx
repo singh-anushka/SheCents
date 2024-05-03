@@ -6,7 +6,7 @@ import Image from "next/image";
 import { toast } from "sonner";
 
 import { refillHearts } from "@/actions/user-progress";
-// import { createStripeUrl } from "@/actions/user-subscription";
+import { createStripeUrl } from "@/actions/user-subscription";
 import { Button } from "@/components/ui/button";
 import { MAX_HEARTS, POINTS_TO_REFILL } from "@/constants";
 
@@ -31,16 +31,15 @@ export const Items = ({
     });
   };
 
-//   const onUpgrade = () => {
-//     toast.loading("Redirecting to checkout...");
-//     startTransition(() => {
-//       createStripeUrl()
-//         .then((response) => {
-//           if (response.data) window.location.href = response.data;
-//         })
-//         .catch(() => toast.error("Something went wrong."));
-//     });
-//   };
+  const onUpgrade = () => {
+    startTransition(() => {
+      createStripeUrl()
+        .then((response) => {
+          if (response.data) window.location.href = response.data;
+        })
+        .catch(() => toast.error("Something went wrong."));
+    });
+  };
 
   return (
     <ul className="w-full">
@@ -83,9 +82,9 @@ export const Items = ({
           </p>
         </div>
 
-        {/* <Button onClick={onUpgrade} disabled={pending} aria-disabled={pending}>
+        <Button onClick={onUpgrade} disabled={pending} aria-disabled={pending}>
           {hasActiveSubscription ? "settings" : "upgrade"}
-        </Button> */}
+        </Button>
       </div>
     </ul>
   );
