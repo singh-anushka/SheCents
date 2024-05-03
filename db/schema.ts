@@ -1,4 +1,6 @@
+// import { units } from "./schema";
 import { relations } from "drizzle-orm";
+import { int } from "drizzle-orm/mysql-core";
 import { integer, pgTable, serial, text } from "drizzle-orm/pg-core";
 
 export const courses = pgTable("courses", {
@@ -6,6 +8,24 @@ export const courses = pgTable("courses", {
   title: text("title").notNull(),
   imageSrc: text("image_src").notNull(),
 });
+
+// export const units = pgTable("units", {
+//   id: serial("id").primaryKey(),
+//   title: text("title").notNull(),
+//   description: text("description").notNull(),
+//   courseId: integer("course_id")
+//     .references(() => courses.id, { onDelete: "cascade" })
+//     .notNull(),
+//   order: integer("order").notNull(),
+// });
+
+// const unitRelations = relations(units, ({ many, one }) => ({
+//   course: one(courses, {
+//     fields: [units.courseId],
+//     references: [courses.id],
+//   }),
+// }));
+
 
 export const coursesRelations = relations(courses, ({ many }) => ({
   userProgress: many(userProgress),
