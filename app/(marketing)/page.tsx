@@ -19,7 +19,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center gap-y-8">
         <h1 className="text-xl lg:text-3xl font-bold text-neutral-600 max-w-[480px] text-center">
-          Learn, practice, and master new languages with Duolingo Clone.
+          Smart Money Moves for Women, by Women
         </h1>
         <div className="flex flex-col items-center gap-y-3 max-w-[330px] w-full">
           <ClerkLoading>
@@ -52,6 +52,27 @@ export default function Home() {
               </Button>
             </SignedIn>
           </ClerkLoaded>
+        </div>
+      </div>
+      {/* Expanded Learning Section */}
+      <div className="flex flex-col items-center gap-y-8 mt-8 lg:mt-0">
+        <div className="bg-gray-100 p-6 rounded-lg">
+          <h2 className="text-lg font-semibold text-neutral-700 mb-2">Budgeting Basics</h2>
+          <p className="text-sm text-neutral-600">
+            Learn how to create and stick to a budget that works for you.
+          </p>
+        </div>
+        <div className="bg-gray-100 p-6 rounded-lg">
+          <h2 className="text-lg font-semibold text-neutral-700 mb-2">Investing Insights</h2>
+          <p className="text-sm text-neutral-600">
+            Discover tips and strategies for starting and growing your investment portfolio.
+          </p>
+        </div>
+        <div className="bg-gray-100 p-6 rounded-lg">
+          <h2 className="text-lg font-semibold text-neutral-700 mb-2">Debt Management</h2>
+          <p className="text-sm text-neutral-600">
+            Get expert advice on managing and reducing debt effectively.
+          </p>
         </div>
       </div>
     </div>
