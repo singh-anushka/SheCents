@@ -19,9 +19,9 @@ export const Sidebar = ({ className }: Props) => {
     >
       <Link href="/learn">
         <div className="pt-8 pl-4 pb-7 flex items-center gap-x-3">
-          <Image src="/mascot.svg" height={40} width={40} alt="Mascot" />
-          <h1 className="text-2xl font-extrabold text-rose-600 tracking-wide">
-            Duolingo Clone
+          <Image src="/logo.svg" height={40} width={40} alt="Mascot" />
+          <h1 className="text-3xl font-extrabold text-rose-600 tracking-wide">
+       SheCents
           </h1>
         </div>
       </Link>
@@ -33,6 +33,8 @@ export const Sidebar = ({ className }: Props) => {
           iconSrc="/leaderboard.svg"
         />
         <SidebarItem label="Quests" href="/quests" iconSrc="/quests.svg" />
+        <SidebarItem label="Blogs" href="/blogs" iconSrc="/blogs.svg" />
+        <SidebarItem label="Connect" href="/connect" iconSrc="/connect.svg" />
         <SidebarItem label="Shop" href="/shop" iconSrc="/shop.svg" />
       </div>
       <div className="p-4">
