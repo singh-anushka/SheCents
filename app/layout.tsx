@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google"; // Import Poppins font
 import { ExitModal } from "@/components/modals/exit-modal";
 import { Toaster } from "@/components/ui/sonner";
 import { siteConfig } from "@/config";
+import Head from 'next/head'; // Import Head from next/head
 import "./globals.css";
 import { HeartsModal } from "@/components/modals/hearts-model";
 import { PracticeModal } from "@/components/modals/practice-model";
@@ -12,7 +13,7 @@ import { PracticeModal } from "@/components/modals/practice-model";
 const font = Poppins({ subsets: ["latin"], weight: ['600'] });
 
 export const viewport: Viewport = {
-  themeColor: "#22C55E",
+  themeColor: "#F23E5D",
 };
 
 export const metadata: Metadata = siteConfig;
@@ -25,14 +26,14 @@ export default function RootLayout({
   return (
     <ClerkProvider
       appearance={{
-        layout: {
-          logoImageUrl: "/favicon.ico",
-        },
         variables: {
-          colorPrimary: "#22C55E",
+          colorPrimary: "#F23E5D",
         },
       }}
     >
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <html lang="en">
         {/* Apply Poppins font to body */}
         <body className={font.className}>
