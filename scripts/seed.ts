@@ -85,13 +85,13 @@ const main = async () => {
               {
                 lessonId: lesson.id,
                 type: "SELECT",
-                question: 'Which one of these is "the man"?',
+                question: 'which is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code, called smart contracts.?',
                 order: 1,
               },
               {
                 lessonId: lesson.id,
                 type: "SELECT",
-                question: 'Which one of these is "the woman"?',
+                question: 'A form of savings account that shows you own a piece of a company and have a claim on its assets and earning',
                 order: 2,
               },
               {
@@ -127,7 +127,7 @@ const main = async () => {
               {
                 lessonId: lesson.id,
                 type: "ASSIST",
-                question: '"the zombie"',
+                question: 'What does the term "IPO" stand for in finance?',
                 order: 8,
               },
             ])
@@ -140,22 +140,22 @@ const main = async () => {
                 {
                   challengeId: challenge.id,
                   correct: true,
-                  text: "el hombre",
-                  imageSrc: "/man.svg",
+                  text: "Ethereum",
+                  imageSrc: "/ethereum.svg",
                   audioSrc: "/es_man.mp3",
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
-                  text: "la mujer",
-                  imageSrc: "/woman.svg",
+                  text: "Tether",
+                  imageSrc: "/tether.svg",
                   audioSrc: "/es_woman.mp3",
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
-                  text: "el chico",
-                  imageSrc: "/boy.svg",
+                  text: "bitcoin",
+                  imageSrc: "/bitcoin.svg",
                   audioSrc: "/es_boy.mp3",
                 },
               ]);
@@ -166,22 +166,22 @@ const main = async () => {
                 {
                   challengeId: challenge.id,
                   correct: true,
-                  text: "la mujer",
-                  imageSrc: "/woman.svg",
+                  text: "Stocks",
+                  imageSrc: "/stocks.svg",
                   audioSrc: "/es_woman.mp3",
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
-                  text: "el chico",
-                  imageSrc: "/boy.svg",
+                  text: "Dividend",
+                  imageSrc: "/dividend.svg",
                   audioSrc: "/es_boy.mp3",
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
-                  text: "el hombre",
-                  imageSrc: "/man.svg",
+                  text: "Shares",
+                  imageSrc: "/shares.svg",
                   audioSrc: "/es_man.mp3",
                 },
               ]);
@@ -319,19 +319,19 @@ const main = async () => {
                 {
                   challengeId: challenge.id,
                   correct: false,
-                  text: "la mujer",
+                  text: " Investment Portfolio Overview",
                   audioSrc: "/es_woman.mp3",
                 },
                 {
                   challengeId: challenge.id,
                   correct: true,
-                  text: "el zombie",
+                  text: " Initial Public Offering",
                   audioSrc: "/es_zombie.mp3",
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
-                  text: "el chico",
+                  text: " Individual Pension Option",
                   audioSrc: "/es_boy.mp3",
                 },
               ]);
