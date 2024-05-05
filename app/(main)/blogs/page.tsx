@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react'; // Importing the ArrowRight icon from Lucide Icons
+import MySVGImage from './path-to-your-svg-image.svg'; // Import your SVG image
+import Image from 'next/image';
 
 const Page = () => {
   // Example case studies data
@@ -25,14 +27,21 @@ const Page = () => {
   ];
 
   return (
-    <div className="bg-gray-100 min-h-screen">
-      <header className="bg-rose-500 py-4">
-        <div className="container mx-auto px-4">
-          <h1 className="text-white text-2xl font-semibold">Financial Insights</h1>
+    <div className=" min-h-screen">
+      <div className="flex w-full flex-col items-center">
+          <Image src="/blogs.svg" alt="Shop" height={90} width={90} />
+
+          <h1 className="my-6 text-center text-2xl font-bold text-neutral-800">
+            Blogs
+          </h1>
+          <p className="mb-6 text-center text-lg text-muted-foreground">
+          Where Women Learn, Grow, and Thrive Financially
+          </p>
+
+          
         </div>
-      </header>
       <main className="container mx-auto px-4 py-8">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-4">Latest Blogs</h2>
+        <h2 className="text-3xl font-semibold text-gray-800 mb-4"></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {caseStudies.map((caseStudy) => (
             <div key={caseStudy.id} className="bg-white shadow-md rounded-lg p-6">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Twitter, Linkedin } from 'lucide-react';
+import Image from 'next/image';
 
 const Page = () => {
   // Demo data for featured leaders
@@ -50,26 +51,38 @@ const Page = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
       {/* Navbar */}
-      <nav className="bg-rose-500 p-4">
+      {/* <nav className="bg-rose-500 p-4">
         <div className="container mx-auto flex justify-between items-center">
           <a href="#" className="text-white text-2xl font-bold">Community Connect</a>
           <ul className="flex">
             <li><a href="#" className="text-white mr-6">Home</a></li>
             {/* Add more navigation links here if needed */}
-          </ul>
+          {/* </ul>
         </div>
-      </nav>
+      </nav> */} 
+ <div className="flex w-full flex-col items-center">
+          <Image
+           src="/connect.svg" alt="Shop" height={90} width={90} />
 
+          <h1 className="my-6 text-center text-2xl font-bold text-neutral-800">
+            Community Connect
+          </h1>
+          <p className="mb-6 text-center text-lg text-muted-foreground">
+          Connect with your favorite leaders!
+          </p>
+
+          
+        </div>
       {/* Main Content */}
       <div className="container mx-auto py-8">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">Connect with your favorite leaders!</h1>
+        <h1 className="text-3xl font-bold text-gray-800 mb-4"></h1>
         {/* Featured Leaders Section */}
         <section>
           <h2 className="text-2xl font-bold text-gray-800 mb-2">Featured Leaders</h2>
           <div className="grid grid-cols-2 gap-4">
             {featuredLeaders.map((leader) => (
               <div key={leader.id} className="bg-white rounded-lg p-4 shadow-md">
-                <img src={leader.image} alt={leader.name} className="w-20 h-20 rounded-full mx-auto mb-2" />
+                <Image src={leader.image} alt={leader.name} className="w-20 h-20 rounded-full mx-auto mb-2" />
                 <h3 className="text-xl font-bold text-gray-800">{leader.name}</h3>
                 <p className="text-gray-600 mb-2">{leader.title}</p>
                 <p className="text-gray-700">{leader.bio}</p>
