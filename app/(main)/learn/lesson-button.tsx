@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Crown, Star } from "lucide-react";
+import { Check, Crown, DollarSign, IndianRupee, Star } from "lucide-react";
 import Link from "next/link";
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
 
@@ -48,7 +48,7 @@ export const LessonButton = ({
   const isLast = index === totalCount;
   const isCompleted = !current && !locked;
 
-  const Icon = isCompleted ? Check : isLast ? Crown : Star;
+  const Icon = isCompleted ? Check : isLast ? Crown : IndianRupee;
 
   const href = isCompleted ? `/lesson/${id}` : "/lesson";
 
