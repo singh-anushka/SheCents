@@ -7,7 +7,7 @@ import {
   SignInButton,
   SignUpButton,
 } from "@clerk/nextjs";
-import { Users, Eye, Heart,Loader2 } from "lucide-react"; // Replaced DollarSign with more relatable icons
+import { Loader2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -61,47 +61,18 @@ export default function Home() {
           </ClerkLoaded>
         </div>
       </div>
-      {/* Row 2: Cards */}
-      <div className="flex justify-center gap-8">
-        {/* Card 1 */}
-        <div className="bg-white rounded-lg p-6 shadow-md hover:bg-rose-100 transition-colors duration-300">
-          <div className="text-xl font-semibold mb-2 flex items-center">
-            {/* Relatable LucideReact Icon */}
-            <Users className="w-8 h-8 text-primary mr-2" />
-            Our Mission
-          </div>
-          <div className="text-neutral-600">
-            <p>Empowering women through financial education for a future of independence and security.</p>
-          </div>
-        </div>
-        {/* Card 2 */}
-        <div className="bg-white rounded-lg p-6 shadow-md hover:bg-rose-100 transition-colors duration-300">
-          <div className="text-xl font-semibold mb-2 flex items-center">
-            {/* Relatable LucideReact Icon */}
-            <Eye className="w-8 h-8 text-primary mr-2" />
-            Vision
-          </div>
-          <div className="text-neutral-600">
-            <p>Every woman confidently making informed financial decisions, fostering a ripple effect of positive change.</p>
-          </div>
-        </div>
-        {/* Card 3 */}
-        <div className="bg-white rounded-lg p-6 shadow-md hover:bg-rose-100 transition-colors duration-300">
-          <div className="text-xl font-semibold mb-2 flex items-center">
-            {/* Relatable LucideReact Icon */}
-            <Heart className="w-8 h-8 text-primary mr-2" />
-            Our Values
-          </div>
-          <div className="text-neutral-600">
-            <p>Empowerment, Inclusivity, Integrity, Collaboration, Continuous Learning.</p>
-          </div>
-        </div>
-      </div>
       <h1 className="text-xl lg:text-3xl font-bold text-neutral-600 max-w-[480px] text-center mb-4 flex px-0 py-10">
-        Building Wealth, Empowering Women
-      </h1>
-      {/* Footer */}
-      {/* Your footer content here */}
+      Building Wealth, Empowering Women
+          </h1>
+      {/* Row 2: Sections */}
+      <div className="flex flex-col items-center gap-y-8 w-full">
+     
+          <h2 className="text-lg font-semibold text-neutral-700 mb-2">Debt Management</h2>
+          <p className="text-sm text-neutral-600">
+            Get expert advice on managing and reducing debt effectively.
+          </p>
+     
+      </div>
     </div>
   );
 }
