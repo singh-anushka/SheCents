@@ -1,3 +1,5 @@
+import Statistics from "@/components/Statistics";
+import Features from "@/components/Features";
 import { Button } from "@/components/ui/button";
 import {
   ClerkLoaded,
@@ -57,22 +59,25 @@ export default function Home() {
                   <Link href="/learn">Continued Learning</Link>
                 </Button>
               </SignedIn>
+              
             </div>
+            
           </ClerkLoaded>
+        
         </div>
+       
       </div>
-      <h1 className="text-xl lg:text-3xl font-bold text-neutral-600 max-w-[480px] text-center mb-4 flex px-0 py-10">
+      <h1 className="text-xl lg:text-3xl font-bold text-neutral-600 max-w-[480px] text-center mb-0 flex px-0 py-10">
       Building Wealth, Empowering Women
           </h1>
       {/* Row 2: Sections */}
-      <div className="flex flex-col items-center gap-y-8 w-full">
+      {/* <div className="flex flex-col items-center gap-y-8 w-full">
      
-          <h2 className="text-lg font-semibold text-neutral-700 mb-2">Debt Management</h2>
-          <p className="text-sm text-neutral-600">
-            Get expert advice on managing and reducing debt effectively.
-          </p>
+        
      
-      </div>
+      </div> */}
+       <Statistics/>
+      <Features/>
     </div>
   );
 }
