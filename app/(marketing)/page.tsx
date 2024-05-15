@@ -62,7 +62,7 @@ export default function Home() {
         </div>
       </div>
       <h1 className="text-xl lg:text-3xl font-bold text-neutral-600 max-w-[480px] text-center mb-4 flex px-0 py-10">
-      "Building Wealth, Empowering Women"
+      Building Wealth, Empowering Women
           </h1>
       {/* Row 2: Sections */}
       <div className="flex flex-col items-center gap-y-8 w-full">
