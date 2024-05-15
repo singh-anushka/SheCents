@@ -82,7 +82,7 @@ const Page = () => {
           <div className="grid grid-cols-2 gap-4">
             {featuredLeaders.map((leader) => (
               <div key={leader.id} className="bg-white rounded-lg p-4 shadow-md">
-                <img src={leader.image} alt={leader.name} className="w-20 h-20 rounded-full mx-auto mb-2" />
+                <Image src={leader.image} alt={leader.name} className="w-20 h-20 rounded-full mx-auto mb-2" />
                 <h3 className="text-xl font-bold text-gray-800">{leader.name}</h3>
                 <p className="text-gray-600 mb-2">{leader.title}</p>
                 <p className="text-gray-700">{leader.bio}</p>
