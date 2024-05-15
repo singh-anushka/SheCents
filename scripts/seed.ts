@@ -250,7 +250,7 @@ const main = async () => {
                   correct: false,
                   text: "Return on Investment",
                   imageSrc: "/return.svg",
-                  audioSrc: "returnoninvesment.mp3",
+                  audioSrc: "returnoninvestment.mp3",
                 },
                 {
                   challengeId: challenge.id,
