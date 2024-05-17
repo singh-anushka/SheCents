@@ -1,6 +1,6 @@
 # SheCents-Smart Money Moves for women by women 
 
-An simple application designed to educate women and others about finances through an engaging and gamified approach, 
+An fully responsive full stack application designed to educate women and others about finances through an engaging and gamified approach, 
 employing a straightforward and interactive user interface.
 
 # Screenshots 
@@ -41,6 +41,15 @@ employing a straightforward and interactive user interface.
 **You can refill Your hearts using 10 points**
 ![Screenshot 2024-05-15 120439](https://github.com/singh-anushka/SheCents/assets/115483735/e3bd69fd-d350-48c6-bab3-5a22e662ecdd)
 
+
+
+
+# Future Modifications 
+**Google analytics can be used to track the number of users and helpfull data charts**
+**Voice feature can be added in the answers to improve the interactiveness and accessibility**
+**Admin Dashboard can be made for performing CRUD operations of the questions and challenges with simple UI**
+**AI Chatbot which answers the questions related to the finance**
+**Feedback section can be build which collects testimonials from the customers**
 
 
 
