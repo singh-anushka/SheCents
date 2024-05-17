@@ -49,7 +49,7 @@ employing a straightforward and interactive user interface.
 **Voice feature can be added in the answers to improve the interactiveness and accessibility**
 **Admin Dashboard can be made for performing CRUD operations of the questions and challenges with simple UI**
 **AI Chatbot which answers the questions related to the finance**
-**Feedback section can be build which collects testimonilas from the customers**
+**Feedback section can be build which collects testimonials from the customers**
 
 
 
