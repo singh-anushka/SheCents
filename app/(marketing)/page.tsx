@@ -12,9 +12,11 @@ import {
 import { Loader2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
+    <div>
     <div className="max-w-[988px] mx-auto flex-1 w-full flex flex-col items-center justify-center p-2 gap-8">
       {/* Row 1: Image and Smart Money Text */}
       <div className="flex flex-col lg:flex-row items-center justify-center gap-20">
@@ -76,8 +78,12 @@ export default function Home() {
         
      
       </div> */}
-       <Statistics/>
-      <Features/>
+   
+     
     </div>
+    <Statistics/>
+      <Features/>
+     <Contact/>
+     </div>
   );
 }

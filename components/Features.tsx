@@ -43,40 +43,46 @@ const Features = () => {
   const features: Feature[] = [
     {
       icon: <FaClock />,
-      title: "Heading",
+      title: "User Friendly Interface",
       description:
-        "lorem",
+        "Leveraging scalable technology platforms and user-friendly interfaces can streamline implementation and ensure accessibility for a wide range of users.",
     },
     {
       icon: <FaMapMarkerAlt />,
-      title: "Heading",
+      title: "Gamified Experience",
       description:
-        "lorem ipsum",
+        "Developing high-quality educational content, including interactive modules, quizzes, and case studies, is crucial for the effectiveness of our solution. Collaborating with financial experts and educators can enhance the quality and relevance of the content.",
     },
     {
       icon: <FaLock />,
-      title: "Heading",
+      title: "Community Forums",
       description:
-        "Lorem Ipsum",
+        "Implementing effective user engagement strategies such as personalized learning paths, gamification elements, and community forums can enhance user participation and retention.",
     },
     {
       icon: <FaStar />,
-      title: "Heading",
+      title: "User Feedback",
       description:
-        "Lorem Ipsum",
+        "Adopting a mindset of continuous improvement by gathering user feedback, monitoring metrics, and iterating on the application based on insights can enhance its effectiveness over",
     },
     {
       icon: <FaHeartbeat />,
-      title: "Heading",
+      title: "Community Connect",
       description:
-        "Lorem Ipsum.",
+        "Partnering with organizations, institutions, and community groups focused on women's empowerment and financial literacy can expand outreach and maximize the impact of our solution.",
     },
     {
-      icon: <FaChartBar />,
-      title: "Heading",
-      description:
-        "Lorem Ipsum.",
-    },
+        icon: <FaHeartbeat />,
+        title: "Community Connect",
+        description:
+          "Partnering with organizations, institutions, and community groups focused on women's empowerment and financial literacy can expand outreach and maximize the impact of our solution.",
+      },
+    // {
+    //   icon: <FaChartBar />,
+    //   title: "Heading",
+    //   description:
+    //     "Lorem Ipsum.",
+    // },
   ];
 
   return (
