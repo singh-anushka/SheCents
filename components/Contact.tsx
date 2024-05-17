@@ -9,7 +9,6 @@ const Contact = () => {
             width="100%"
             height="100%"
             frameBorder="0"
-
             title="map"
             scrolling="no"
             src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
@@ -19,7 +18,8 @@ const Contact = () => {
         <div className="container px-5 py-24 mx-auto flex">
           <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
             <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
-            <p className="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+            <p className="leading-relaxed mb-5 text-gray-600">Empower Your Finances, Empower Your Future.</p>
+            <p className="leading-relaxed mb-5 text-gray-600">Join us on a journey to financial empowerment with FinWise, a user-friendly and engaging app designed to simplify finance education for women.  Let us make financial literacy fun and accessible!</p>
             <div className="relative mb-4">
               <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
               <input
@@ -37,8 +37,8 @@ const Contact = () => {
                 className="w-full bg-white rounded border border-gray-300 focus:border-rose-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </div>
-            <button className="text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded text-lg">Button</button>
-            <p className="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+            <button className="text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded text-lg">Send Feedback</button>
+            <p className="text-xs text-gray-500 mt-3">We appreciate your feedback and are committed to improving your experience with SheCents.</p>
           </div>
         </div>
       </section>

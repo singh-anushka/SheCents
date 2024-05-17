@@ -52,11 +52,11 @@ const Page = () => {
           ))}
         </div>
       </main>
-      <footer className="bg-gray-800 text-white py-4">
+      {/* <footer className="bg-gray-800 text-white py-4">
         <div className="container mx-auto px-4 text-center">
           <p>&copy; 2024 Financial Insights. All rights reserved.</p>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }

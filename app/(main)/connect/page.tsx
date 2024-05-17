@@ -61,7 +61,8 @@ const Page = () => {
         </div>
       </nav> */} 
  <div className="flex w-full flex-col items-center">
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
            src="/connect.svg" alt="Shop" height={90} width={90} />
 
           <h1 className="my-6 text-center text-2xl font-bold text-neutral-800">
@@ -82,7 +83,8 @@ const Page = () => {
           <div className="grid grid-cols-2 gap-4">
             {featuredLeaders.map((leader) => (
               <div key={leader.id} className="bg-white rounded-lg p-4 shadow-md">
-                <Image src={leader.image} alt={leader.name} className="w-20 h-20 rounded-full mx-auto mb-2" />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={leader.image} alt={leader.name} className="w-20 h-20 rounded-full mx-auto mb-2" />
                 <h3 className="text-xl font-bold text-gray-800">{leader.name}</h3>
                 <p className="text-gray-600 mb-2">{leader.title}</p>
                 <p className="text-gray-700">{leader.bio}</p>
@@ -120,9 +122,9 @@ const Page = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-rose-500 text-white text-center py-4">
+      {/* <footer className="bg-rose-500 text-white text-center py-4">
         <p>&copy; 2024 Community Connect. All rights reserved.</p>
-      </footer>
+      </footer> */}
     </div>
   );
 };
