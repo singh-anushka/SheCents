@@ -44,6 +44,12 @@ employing a straightforward and interactive user interface.
 
 
 
+#Future Modifications 
+**Google analytics can be used to track the number of users and helpfull data charts**
+**Voice feature can be added in the answers to improve the interactiveness and accessibility**
+**Admin Dashboard can be made for performing CRUD operations of the questions and challenges with simple UI**
+
+
 
 
 
