@@ -35,18 +35,30 @@ employing a straightforward and interactive user interface.
 **On Completing the Lesson**
 ![image](https://github.com/singh-anushka/SheCents/assets/115483735/6565eefe-accc-403f-994d-85726debe3d8)
 
+### 4. Leaderboard
+**Compare your performance with other users**
 
 
-###4. Premium 
-**You can refill Your hearts using 10 points**
+## Gamified Encouragements and Blankets
+### 5. Quests and Shop
+Inorder to boost user interests; the platform is gamefied with hearts and XPs.
+Hearts act as a safety blanket for wrong answers, while XPs are the rewards to clearing a level. But when Hearts are exhausted there is a way refill them, either through payment or through exhausting XPs. Quests are the best way to earn more XPs and hence the Hearts.
 ![Screenshot 2024-05-15 120439](https://github.com/singh-anushka/SheCents/assets/115483735/e3bd69fd-d350-48c6-bab3-5a22e662ecdd)
 
+## Doubts?
+### 6. Connect
+To ensure users gain more knowledge about the current money moves in case the lessons are not enough. A connect with financial experts will help clear any doubts and will provide more knowledge about the field.
 
+### 7. Blogs
+Any further doubts regarding the practicality of the strategy and learnings given by community leaders in connect or through course modules are users can read other users experience, and post theirs too.
+
+### 8. AskHer
+Any more further personalized doubts and queries can be asked to AskHer, an NLP chatbot.
 
 
 # Future Modifications 
-**Google analytics can be used to track the number of users and helpfull data charts**
-**Voice feature can be added in the answers to improve the interactiveness and accessibility**
+**Google analytics can be used to track the number of users and helpful data charts**
+**Voice feature can be added in the answers to improve the interactivity and accessibility**
 **Admin Dashboard can be made for performing CRUD operations of the questions and challenges with simple UI**
 **AI Chatbot which answers the questions related to the finance**
 **Feedback section can be build which collects testimonials from the customers**
