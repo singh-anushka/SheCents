@@ -40,28 +40,54 @@ employing a straightforward and interactive user interface.
 <img width="1440" alt="Screenshot 2024-05-18 at 11 28 06 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/fa51540e-e841-4348-a97e-5c0c6f7a5d66">
 
 ## Gamified Encouragements and Blankets
-### 5. Quests and Shop
 Inorder to boost user interests; the platform is gamefied with hearts and XPs.
-Hearts act as a safety blanket for wrong answers, while XPs are the rewards to clearing a level. In case you run out of hearts, there is a way refill them - either through payment gateway (powered by Stripe) or through exhausting XPs. Quests are the best way to earn more XPs by finishing more lessons, and hence to Hearts.
+Hearts act as a safety blanket for wrong answers, while XPs are the rewards to clearing a level.
+In case one run out of Hearts:
 ![Screenshot 2024-05-15 120439](https://github.com/singh-anushka/SheCents/assets/115483735/e3bd69fd-d350-48c6-bab3-5a22e662ecdd)
+there are ways refill them - 
+
+### 5. Quests
+One of the ways to earn more hearts is through exhausting XPs. Quests are the best way to earn more XPs by finishing more lessons, and hence to Hearts.
 <img width="1440" alt="Screenshot 2024-05-18 at 10 20 10 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/49c09c91-926e-4823-9ffb-b0ee416133d7">
+
+### 6. Shop(Premium)
+To get unlimited hearts is to enter into the Premium tier by a monthly subscription using payment gateway powered by Stripe.
 <img width="1440" alt="Screenshot 2024-05-18 at 10 20 24 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/24c16afb-e20b-47c2-b4f9-181aa67b6bae">
 <img width="1440" alt="Screenshot 2024-05-18 at 11 10 38 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/2d1966fa-39e6-42d6-a22f-c584cb975d51">
 
 
 
 ## Doubts?
-### 6. Connect
+### 7. Connect
 To ensure users gain more knowledge about the current money moves in case the lessons are not enough. A connect with financial experts will help clear any doubts and will provide more knowledge about the field.
 <img width="1439" alt="Screenshot 2024-05-18 at 10 32 01 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/c866d784-90e1-4ea5-9179-2f4549cf8ea0">
 
-### 7. Blogs
+### 8. Blogs
 Any further doubts regarding the practicality of the strategy and learnings given by community leaders in connect or through course modules are users can read other users experience, and post theirs too.
 <img width="1440" alt="Screenshot 2024-05-18 at 10 31 40 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/4685c80d-a1e4-4c5d-a350-c391ed458dc5">
 
-### 8. AskHer
+### 9. AskHer
 Any more further personalized doubts and queries can be asked to AskHer, an NLP chatbot.
 <img width="1440" alt="Screenshot 2024-05-18 at 10 32 33 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/afa60648-ba05-468a-be0b-615bd4c71a8e">
+
+# Local Setup
+### 1. Clone the project into local device and open terminal inside the corresponding folder
+### 2. Make sure NodeJS is already installed. If not, download from [here](https://nodejs.org/en/download/)
+### 4. Run the following command in the terminal
+> ``` npm install ```
+#### The project has been successfully installed in the device.
+### 5. To run the project,run the command
+> ``` npm install --legacy-peer-deps ```
+> ``` npm run dev ```
+### 6. Now go to your default browser, and type the following command
+> ```http://localhost:3000/ ```
+
+*Steps 1-4 are needed for first-time installation only. Only steps 5 and 6 will be needed while devolping the project.*
+
+# Team Members
+- ### [Ishpreet Kaur](https://github.com/Ishpreet-Kaur-Bedi)
+- ### [Anushka Singh](https://github.com/singh-anushka)
+- ### [Siddhi Agarwal](https://github.com/siddhi-agarwal25)
 
 
 # Future Modifications 
