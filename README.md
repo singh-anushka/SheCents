@@ -37,23 +37,32 @@ employing a straightforward and interactive user interface.
 
 ### 4. Leaderboard
 **Compare your performance with other users**
+<img width="1440" alt="Screenshot 2024-05-18 at 10 59 06 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/59cd3d19-648d-4fb9-9d4d-cd77f6deea17">
 
 
 ## Gamified Encouragements and Blankets
 ### 5. Quests and Shop
 Inorder to boost user interests; the platform is gamefied with hearts and XPs.
-Hearts act as a safety blanket for wrong answers, while XPs are the rewards to clearing a level. But when Hearts are exhausted there is a way refill them, either through payment or through exhausting XPs. Quests are the best way to earn more XPs and hence the Hearts.
+Hearts act as a safety blanket for wrong answers, while XPs are the rewards to clearing a level. In case you run out of hearts, there is a way refill them - either through payment gateway (powered by Stripe) or through exhausting XPs. Quests are the best way to earn more XPs by finishing more lessons, and hence to Hearts.
 ![Screenshot 2024-05-15 120439](https://github.com/singh-anushka/SheCents/assets/115483735/e3bd69fd-d350-48c6-bab3-5a22e662ecdd)
+<img width="1440" alt="Screenshot 2024-05-18 at 10 20 10 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/49c09c91-926e-4823-9ffb-b0ee416133d7">
+<img width="1440" alt="Screenshot 2024-05-18 at 10 20 24 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/24c16afb-e20b-47c2-b4f9-181aa67b6bae">
+<img width="1440" alt="Screenshot 2024-05-18 at 11 10 38 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/2d1966fa-39e6-42d6-a22f-c584cb975d51">
+
+
 
 ## Doubts?
 ### 6. Connect
 To ensure users gain more knowledge about the current money moves in case the lessons are not enough. A connect with financial experts will help clear any doubts and will provide more knowledge about the field.
+<img width="1439" alt="Screenshot 2024-05-18 at 10 32 01 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/c866d784-90e1-4ea5-9179-2f4549cf8ea0">
 
 ### 7. Blogs
 Any further doubts regarding the practicality of the strategy and learnings given by community leaders in connect or through course modules are users can read other users experience, and post theirs too.
+<img width="1440" alt="Screenshot 2024-05-18 at 10 31 40 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/4685c80d-a1e4-4c5d-a350-c391ed458dc5">
 
 ### 8. AskHer
 Any more further personalized doubts and queries can be asked to AskHer, an NLP chatbot.
+<img width="1440" alt="Screenshot 2024-05-18 at 10 32 33 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/afa60648-ba05-468a-be0b-615bd4c71a8e">
 
 
 # Future Modifications 
