@@ -84,9 +84,10 @@ Any more further personalized doubts and queries can be asked to AskHer, an NLP 
 1. Clone the project into local device and open terminal inside the corresponding folder
 2. Make sure NodeJS is already installed. If not, download from [here](https://nodejs.org/en/download/)
 3. Run the following command in the terminal
-> ``` npm install ```
+> ` npm install `
 4. Install all the dependencies
-> ``` npm install --legacy-peer-deps ```
+> ` npm install --legacy-peer-deps `
+
 **The project has been successfully installed in the device.**
 5. Create `.env` file in **root** directory.
 6. Contents of `.env`:
@@ -181,11 +182,10 @@ Once the script completes, check your database to ensure that the challenges dat
 
 **NOTE:** Please make sure to keep your API keys and configuration values secure and do not expose them publicly.
 
-17. To run the project,run the command
-> ``` npm run dev ```
-> 
+17. To run the project,run the command:
+> ` npm run dev `
 18. Now go to your default browser, and type the following command
-> ```http://localhost:3000/ ```
+> `http://localhost:3000/ `
 
 *Steps 1-4 are needed for first-time installation only. Only steps 5 onwards will be needed while devolping the project.*
 
