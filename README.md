@@ -12,26 +12,35 @@ employing a straightforward and interactive user interface.
 ### 2. Login/Signup
 **Login and signup is done by clerk authentication**
 ![image](https://github.com/singh-anushka/SheCents/assets/115483735/dd32a31a-eda4-471f-9a99-5eed16c992f2)
+
 **Security is provided with the help of Two Factor Authentication Process**
 ![image](https://github.com/singh-anushka/SheCents/assets/115483735/a8e64c7a-5e4c-4ee3-a5d8-845bd509b4b2)
+
 **Google Auth is also provided**
 ![image](https://github.com/singh-anushka/SheCents/assets/115483735/aa632188-d3a6-432e-96a2-aaff89409aea)
 
 ### 3. Courses
 **Financial Modules are provided for various finance concepts**
 ![Screenshot 2024-05-15 114931](https://github.com/singh-anushka/SheCents/assets/115483735/f0b4443d-5cef-4a68-b367-703b69f22d64)
+
 **Each Module have 5 Lessons**
 ![image](https://github.com/singh-anushka/SheCents/assets/115483735/b6809e89-e7ea-47da-932d-34ace39ec147)
+
 **Each Lesson have 8 Questions**
 ![image](https://github.com/singh-anushka/SheCents/assets/115483735/5b294b0d-f336-4b1f-93db-a792637f9b1c)
+
 **On Choosing the wrong answer hearts decreases**
 ![image](https://github.com/singh-anushka/SheCents/assets/115483735/6f52270b-260b-4eee-9222-a6005d81c3da)
+
 **The progress bar updates with each correct answer**
 ![image](https://github.com/singh-anushka/SheCents/assets/115483735/0c782ced-77df-4d30-962a-45519b1ecd99)
+
 **Popups for leaving the question page**
 ![image](https://github.com/singh-anushka/SheCents/assets/115483735/d2e39511-e4ae-42e4-b0aa-a451f8d46746)
+
 **PopUp when you ran out of your hearts**
 ![Screenshot 2024-05-15 120439](https://github.com/singh-anushka/SheCents/assets/115483735/c605d225-26f3-4b46-b3d8-3727a83eca8d)
+
 **On Completing the Lesson**
 ![image](https://github.com/singh-anushka/SheCents/assets/115483735/6565eefe-accc-403f-994d-85726debe3d8)
 
@@ -44,7 +53,8 @@ Inorder to boost user interests; the platform is gamefied with hearts and XPs.
 Hearts act as a safety blanket for wrong answers, while XPs are the rewards to clearing a level.
 In case one run out of Hearts:
 ![Screenshot 2024-05-15 120439](https://github.com/singh-anushka/SheCents/assets/115483735/e3bd69fd-d350-48c6-bab3-5a22e662ecdd)
-there are ways refill them - 
+
+**There are ways refill them -**
 
 ### 5. Quests
 One of the ways to earn more hearts is through exhausting XPs. Quests are the best way to earn more XPs by finishing more lessons, and hence to Hearts.
@@ -71,24 +81,118 @@ Any more further personalized doubts and queries can be asked to AskHer, an NLP 
 <img width="1440" alt="Screenshot 2024-05-18 at 10 32 33 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/afa60648-ba05-468a-be0b-615bd4c71a8e">
 
 # Local Setup
-### 1. Clone the project into local device and open terminal inside the corresponding folder
-### 2. Make sure NodeJS is already installed. If not, download from [here](https://nodejs.org/en/download/)
-### 4. Run the following command in the terminal
+1. Clone the project into local device and open terminal inside the corresponding folder
+2. Make sure NodeJS is already installed. If not, download from [here](https://nodejs.org/en/download/)
+3. Run the following command in the terminal
 > ``` npm install ```
-### 5. Install all the dependencies
+4. Install all the dependencies
 > ``` npm install --legacy-peer-deps ```
-#### The project has been successfully installed in the device.
-### 6. To run the project,run the command
+**The project has been successfully installed in the device.**
+5. Create `.env` file in **root** directory.
+6. Contents of `.env`:
+
+```env
+# .env
+
+# disabled next.js telemetry
+NEXT_TELEMETRY_DISABLED=1
+
+# clerk auth keys
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+CLERK_SECRET_KEY=sk_test_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+# neon db uri
+DATABASE_URL="postgresql://<user>:<password>@<host>:<post>/lingo?sslmode=require"
+
+# stripe api key and webhook
+STRIPE_API_SECRET_KEY=sk_test_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+STRIPE_WEBHOOK_SECRET=whsec_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+# public app url
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+# clerk admin user id(s) separated by comma and space (, )
+CLERK_ADMIN_IDS="user_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx, user_xxxxxxxxxxxxxxxxxxxxxx"
+
+```
+
+7. Obtain Clerk Authentication Keys
+
+   1. **Source**: Clerk Dashboard or Settings Page
+   2. **Procedure**:
+      - Log in to your Clerk account.
+      - Navigate to the dashboard or settings page.
+      - Look for the section related to authentication keys.
+      - Copy the `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` provided in that section.
+
+8. Retrieve Neon Database URI
+
+   1. **Source**: Database Provider (e.g., Neon, PostgreSQL)
+   2. **Procedure**:
+      - Access your database provider's platform or configuration.
+      - Locate the database connection details.
+      - Replace `<user>`, `<password>`, `<host>`, and `<port>` placeholders in the URI with your actual database credentials.
+      - Ensure to include `?sslmode=require` at the end of the URI for SSL mode requirement.
+
+9. Fetch Stripe API Key and Webhook Secret
+
+   1. **Source**: Stripe Dashboard
+   2. **Procedure**:
+      - Log in to your Stripe account.
+      - Navigate to the dashboard or API settings.
+      - Find the section related to API keys and webhook secrets.
+      - Copy the `STRIPE_API_SECRET_KEY` and `STRIPE_WEBHOOK_SECRET`.
+
+10. Specify Public App URL
+
+   1. **Procedure**:
+      - Replace `http://localhost:3000` with the URL of your deployed application.
+
+11. Identify Clerk Admin User IDs
+
+   1. **Source**: Clerk Dashboard or Settings Page
+   2. **Procedure**:
+      - Log in to your Clerk account.
+      - Navigate to the dashboard or settings page.
+      - Find the section related to admin user IDs.
+      - Copy the user IDs provided, ensuring they are separated by commas and spaces.
+
+12. Save and Secure:
+
+    - Save the changes to the `.env.local` file.
+
+13. Install Project Dependencies using `npm install --legacy-peer-deps` or `yarn install --legacy-peer-deps`.
+
+14. Run the Seed Script:
+
+In the same terminal, run the following command to execute the seed script:
+
+```bash
+npm run db:prod
+```
+
+This command uses `npm` to execute the Typescript file (`scripts/prod.ts`) and writes challenges data in database.
+
+15. Verify Data in Database:
+
+Once the script completes, check your database to ensure that the challenges data has been successfully seeded.
+
+16. Now app is fully configured 👍 and you can start using this app using either one of `npm run dev` or `yarn dev`.
+
+**NOTE:** Please make sure to keep your API keys and configuration values secure and do not expose them publicly.
+
+17. To run the project,run the command
 > ``` npm run dev ```
-### 7. Now go to your default browser, and type the following command
+> 
+18. Now go to your default browser, and type the following command
 > ```http://localhost:3000/ ```
 
-*Steps 1-4 are needed for first-time installation only. Only steps 5 and 6 will be needed while devolping the project.*
+*Steps 1-4 are needed for first-time installation only. Only steps 5 onwards will be needed while devolping the project.*
 
 # Team Members
-- ### [Ishpreet Kaur](https://github.com/Ishpreet-Kaur-Bedi)
-- ### [Anushka Singh](https://github.com/singh-anushka)
-- ### [Siddhi Agarwal](https://github.com/siddhi-agarwal25)
+- #### [Ishpreet Kaur](https://github.com/Ishpreet-Kaur-Bedi)
+- #### [Anushka Singh](https://github.com/singh-anushka)
+- #### [Siddhi Agarwal](https://github.com/siddhi-agarwal25)
 
 
 # Future Modifications 
