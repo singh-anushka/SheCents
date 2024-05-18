@@ -75,11 +75,12 @@ Any more further personalized doubts and queries can be asked to AskHer, an NLP 
 ### 2. Make sure NodeJS is already installed. If not, download from [here](https://nodejs.org/en/download/)
 ### 4. Run the following command in the terminal
 > ``` npm install ```
-#### The project has been successfully installed in the device.
-### 5. To run the project,run the command
+### 5. Install all the dependencies
 > ``` npm install --legacy-peer-deps ```
+#### The project has been successfully installed in the device.
+### 6. To run the project,run the command
 > ``` npm run dev ```
-### 6. Now go to your default browser, and type the following command
+### 7. Now go to your default browser, and type the following command
 > ```http://localhost:3000/ ```
 
 *Steps 1-4 are needed for first-time installation only. Only steps 5 and 6 will be needed while devolping the project.*
