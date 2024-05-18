@@ -37,8 +37,7 @@ employing a straightforward and interactive user interface.
 
 ### 4. Leaderboard
 **Compare your performance with other users**
-<img width="1440" alt="Screenshot 2024-05-18 at 10 59 06 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/59cd3d19-648d-4fb9-9d4d-cd77f6deea17">
-
+<img width="1440" alt="Screenshot 2024-05-18 at 11 28 06 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/fa51540e-e841-4348-a97e-5c0c6f7a5d66">
 
 ## Gamified Encouragements and Blankets
 ### 5. Quests and Shop
