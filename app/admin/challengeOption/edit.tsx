@@ -13,7 +13,7 @@ export const  ChallengeOptionEdit =() =>{
         />
         <ReferenceInput 
          source="challengeId"
-         reeference="challenges"
+         reference="challenges"
         />
         <TextInput 
         source="imageSrc"

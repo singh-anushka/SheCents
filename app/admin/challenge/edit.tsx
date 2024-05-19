@@ -22,7 +22,7 @@ export const  ChallengeEdit =() =>{
         />
         <ReferenceInput 
          source="lessonId"
-         reeference="lessons"
+         reference="lessons"
         />
         <NumberInput 
         source="order"

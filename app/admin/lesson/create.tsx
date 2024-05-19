@@ -9,7 +9,7 @@ export const  LessonCreate =() =>{
         
         <ReferenceInput 
          source="unitId"
-         reeference="units"
+         reference="units"
         />
         <NumberInput 
         source="order"

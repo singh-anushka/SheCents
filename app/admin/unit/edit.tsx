@@ -9,7 +9,7 @@ export const  UnitEdit =() =>{
         <TextInput  source="description"  validate={[required()]} label="Description"  />
         <ReferenceInput 
          source="courseId"
-         reeference="courses"
+         reference="courses"
         />
         <NumberInput 
         source="order"
