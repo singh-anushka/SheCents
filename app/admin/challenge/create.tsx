@@ -22,7 +22,7 @@ export const  ChallengeCreate =() =>{
         />
         <ReferenceInput 
          source="lessonId"
-         reeference="lessons"
+         reference="lessons"
         />
         <NumberInput 
         source="order"
