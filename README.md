@@ -196,11 +196,12 @@ Once the script completes, check your database to ensure that the challenges dat
 
 
 # Future Modifications 
-**Google analytics can be used to track the number of users and helpful data charts**
-**Voice feature can be added in the answers to improve the interactivity and accessibility**
-**Admin Dashboard can be made for performing CRUD operations of the questions and challenges with simple UI**
-**AI Chatbot which answers the questions related to the finance**
-**Feedback section can be build which collects testimonials from the customers**
+ - **Google analytics can be used to track the number of users and helpful data charts**
+ - **American Express Cards can be added for the premium model**
+ - **Voice feature can be added in the answers to improve the interactivity and accessibility**
+ - **Admin Dashboard can be made for performing CRUD operations of the questions and challenges with simple UI**
+ - **AI Chatbot which answers the questions related to the finance**
+ - **Feedback section can be build which collects testimonials from the customers**
 
 
 
