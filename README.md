@@ -204,7 +204,7 @@ npm run db:push
 
 
 # Future Modifications 
- - **Google analytics can be used to track the number of users and helpful data charts**
+ - **Google analytics can be used to track the number of users and helps to analyse the data**
  - **American Express Cards can be added for the premium model**
  - **Voice feature can be added in the answers to improve the interactivity and accessibility**
  - **Admin Dashboard can be made for performing CRUD operations of the questions and challenges with simple UI**
