@@ -169,14 +169,17 @@ CLERK_ADMIN_IDS="user_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx, user_xxxxxxxxxxxxxxxxxxxxxx
 In the same terminal, run the following command to execute the seed script:
 
 ```bash
-npm run db:prod
+npm run db:seed
 ```
 
 This command uses `npm` to execute the Typescript file (`scripts/prod.ts`) and writes challenges data in database.
 
 15. Verify Data in Database:
 
-Once the script completes, check your database to ensure that the challenges data has been successfully seeded.
+Once the script completes, check your database to ensure that the challenges data has been successfully seeded. Now push the data in the database
+```bash
+npm run db:push
+```
 
 16. Now app is fully configured 👍 and you can start using this app using either one of `npm run dev` or `yarn dev`.
 
