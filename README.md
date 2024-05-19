@@ -50,6 +50,7 @@ employing a straightforward and interactive user interface.
 
 ### 4. Leaderboard
 **Compare your performance with other users**
+Whatever progress is made is stored in the database and it displays the various player's performances along with their current quests 
 <img width="1440" alt="Screenshot 2024-05-18 at 11 28 06 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/fa51540e-e841-4348-a97e-5c0c6f7a5d66">
 
 ## Gamified Encouragements and Blankets
