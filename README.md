@@ -3,6 +3,10 @@
 An fully responsive full stack application designed to educate women and others about finances through an engaging and gamified approach, 
 employing a straightforward and interactive user interface.
 
+- #### [Video](https://docs.google.com/document/d/1LFZds8gGpxqvbzmUiJrv_Giuks4OkgAPU2yHxYEze0c/edit)
+- #### [Flowcharts and User Journey](https://www.canva.com/design/DAGEXtrUxbY/LkioX4T4AaaQtTVLI7klLA/edit)
+- #### [Presentation](https://drive.google.com/file/d/1jdFyVmk5WBM2DYLprDwpdnA7h8HNetPC/view?usp=sharing)
+ 
 # Screenshots 
 
 ### 1. Landing Page 
