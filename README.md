@@ -178,7 +178,7 @@ In the same terminal, run the following command to execute the seed script:
 npm run db:seed
 ```
 
-This command uses `npm` to execute the Typescript file (`scripts/prod.ts`) and writes challenges data in database.
+This command uses `npm` to execute the Typescript file (`scripts/seed.ts`) and writes challenges data in database.
 
 15. Verify Data in Database:
 
