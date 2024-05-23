@@ -1,58 +1,76 @@
+'use client'
+
 import React from 'react';
-import { AiOutlineQuestionCircle } from 'react-icons/ai';
 import AskHerSVG from './askher.svg'; // Import the SVG file
 import Image from 'next/image';
 
-const ChatPage = () => {
-  // Dummy messages
-  const messages = [
-    { id: 1, text: "Hey there!", sender: "user" },
-    { id: 2, text: "Hi! How can I help you?", sender: "bot" },
-    { id: 3, text: "Can you tell me about future investment options for my girl child ? ", sender: "user" },
-    { id: 4, text: "Sure, if her age is below 10 years you can start investing in Sukanya Samridhi Scheme.", sender: "bot" },
-    // Add more dummy messages here
-  ];
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'df-messenger': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
+        'project-id': string;
+        'agent-id': string;
+        'language-code': string;
+        'max-query-length'?: string;
+      };
+      'df-messenger-chat-bubble': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
+        'chat-title': string;
+      };
+    }
+  }
+}
 
+const ChatPage: React.FC = () => {
   return (
-    
-    <div className="flex flex-col h-screen bg-gray-200">
-      {/* AskHer SVG */}
-      <div className="flex w-full flex-col items-center">
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-200 relative">
+            <div className="flex w-full flex-col items-center">
           <Image src="/askher.svg" alt="Shop" height={90} width={90} />
 
           <h1 className="my-6 text-center text-2xl font-bold text-neutral-800">
-            askher.ai
+            Blogs
           </h1>
           <p className="mb-6 text-center text-lg text-muted-foreground">
-          Your Virtual Financial Guru: Chat, Learn, Prosper
+          Your virtual finance Guru: Learn, Chat and Prosper
           </p>
 
           
         </div>
-      <div className="flex-1 p-6 overflow-y-auto">
-        {messages.map((message) => (
-          <div
-            key={message.id}
-            className={`mb-4 ${message.sender === 'user' ? 'text-right' : 'text-left'}`}
-          >
-            <div
-              className={`inline-block px-4 py-2 rounded-lg ${
-                message.sender === 'user' ? 'bg-rose-500 text-white' : 'bg-gray-300'
-              }`}
-            >
-              {message.text}
-            </div>
-          </div>
-        ))}
-      </div>
-      {/* Chat input */}
-      <div className="p-4">
-        <input
-          type="text"
-          placeholder="Type your message..."
-          className="w-full px-4 py-2 border rounded-lg outline-none focus:border-rose-500"
-        />
-      </div>
+
+      <link
+        rel="stylesheet"
+        href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css"
+      />
+    {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+      <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
+      <h1 className="text-center text-2xl font-bold text-neutral-800 mb-4">
+        Askher - Your chatbot
+      </h1>
+
+      <div className="flex-grow"></div> {/* Spacer to push the chatbot to the bottom */}
+
+      <df-messenger
+        project-id="shecents-424209"
+        agent-id="043f59d1-e987-4a7f-a799-3ac1b53c9532"
+        language-code="en"
+        max-query-length="-1"
+      >
+        <df-messenger-chat-bubble chat-title=""></df-messenger-chat-bubble>
+      </df-messenger>
+
+      <style jsx>{`
+        df-messenger {
+          --df-messenger-font-color: #000;
+          --df-messenger-font-family: Google Sans;
+          --df-messenger-chat-background: #f3f6fc;
+          --df-messenger-message-user-background: #d3e3fd;
+          --df-messenger-message-bot-background: #fff;
+          bottom: 16px;
+          right: 16px;
+          position: fixed;
+          z-index: 999;
+        }
+      `}</style>
     </div>
   );
 };
