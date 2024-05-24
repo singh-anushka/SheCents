@@ -22,25 +22,22 @@ declare global {
 
 const ChatPage: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-200 relative">
-            <div className="flex w-full flex-col items-center">
-          <Image src="/askher.svg" alt="Shop" height={90} width={90} />
-
-          <h1 className="my-6 text-center text-2xl font-bold text-neutral-800">
-            Blogs
-          </h1>
-          <p className="mb-6 text-center text-lg text-muted-foreground">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-200 relative p-4">
+      <div className="flex w-full flex-col items-center">
+        <Image src="/askher.svg" alt="Shop" height={90} width={90} />
+        <h1 className="my-6 text-center text-2xl font-bold text-neutral-800">
+          Blogs
+        </h1>
+        <p className="mb-6 text-center text-lg text-muted-foreground">
           Your virtual finance Guru: Learn, Chat and Prosper
-          </p>
-
-          
-        </div>
+        </p>
+      </div>
 
       <link
         rel="stylesheet"
         href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css"
       />
-    {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
       <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 
       <h1 className="text-center text-2xl font-bold text-neutral-800 mb-4">
@@ -69,6 +66,47 @@ const ChatPage: React.FC = () => {
           right: 16px;
           position: fixed;
           z-index: 999;
+        }
+        @media (max-width: 768px) {
+          df-messenger {
+            --df-messenger-font-size: 14px;
+            --df-messenger-chat-background: #e0f7fa;
+            bottom: 8px;
+            right: 8px;
+          }
+          .text-2xl {
+            font-size: 1.5rem;
+          }
+          .text-lg {
+            font-size: 1rem;
+          }
+        }
+        @media (max-width: 480px) {
+          df-messenger {
+            --df-messenger-font-size: 12px;
+            --df-messenger-chat-background: #e0f7fa;
+            bottom: 4px;
+            right: 8px;
+            left: 8px; /* Add left space */
+            width: auto;
+            height: calc(50vh - 4px); /* Adjust the height for better fit */
+          }
+          .text-2xl {
+            font-size: 1.25rem;
+          }
+          .text-lg {
+            font-size: 0.875rem;
+          }
+          .my-6 {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+          }
+          .mb-6 {
+            margin-bottom: 1.5rem;
+          }
+          .mb-4 {
+            margin-bottom: 1rem;
+          }
         }
       `}</style>
     </div>
