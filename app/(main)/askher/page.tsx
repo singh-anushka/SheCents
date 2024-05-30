@@ -43,7 +43,9 @@ const ChatPage: React.FC = () => {
       <h1 className="text-center text-2xl font-bold text-neutral-800 mb-4">
         Askher - Your chatbot
       </h1>
-
+      <h5 className="text-center text-2xl font-bold text-neutral-800 mb-4">
+   Please refresh the page if chatbot does not appear. 
+      </h5>
       <div className="flex-grow"></div> {/* Spacer to push the chatbot to the bottom */}
 
       <df-messenger
