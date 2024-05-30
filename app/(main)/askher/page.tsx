@@ -26,7 +26,7 @@ const ChatPage: React.FC = () => {
       <div className="flex w-full flex-col items-center">
         <Image src="/askher.svg" alt="Shop" height={90} width={90} />
         <h1 className="my-6 text-center text-2xl font-bold text-neutral-800">
-          Blogs
+        Askher.ai
         </h1>
         <p className="mb-6 text-center text-lg text-muted-foreground">
           Your virtual finance Guru: Learn, Chat and Prosper
