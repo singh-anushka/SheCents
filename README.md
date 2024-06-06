@@ -9,7 +9,7 @@ employing a straightforward and interactive user interface.
  
 # Screenshots 
 ### Google Vertex AI Chatbot 
-** Askher.ai is a chatbot build with the helo of Google vertex AI Agent builder. It provides answers to all the Finance related queries in a simplified manner  **
+**Askher.ai is a chatbot build with the helo of Google vertex AI Agent builder. It provides answers to all the Finance related queries in a simplified manner**
 ![image](https://github.com/singh-anushka/SheCents/assets/115483735/f52dde1e-5d92-4b12-8446-585f26f34029)
 ![image](https://github.com/singh-anushka/SheCents/assets/115483735/9b54f361-0570-4f6c-8677-c391ea6578b3)
 
