@@ -8,10 +8,17 @@ employing a straightforward and interactive user interface.
 - #### [Presentation](https://drive.google.com/file/d/1jdFyVmk5WBM2DYLprDwpdnA7h8HNetPC/view?usp=sharing)
  
 # Screenshots 
+### Google Vertex AI Chatbot 
+**Askher.ai is a chatbot build with the helo of Google vertex AI Agent builder. It provides answers to all the Finance related queries in a simplified manner**
+![image](https://github.com/singh-anushka/SheCents/assets/115483735/f52dde1e-5d92-4b12-8446-585f26f34029)
+![image](https://github.com/singh-anushka/SheCents/assets/115483735/9b54f361-0570-4f6c-8677-c391ea6578b3)
+
+
 
 ### 1. Landing Page 
 **This is the landing page - the first appearance of our website to the user.**
 ![image](https://github.com/singh-anushka/SheCents/assets/115483735/fbf1cccb-d531-4e6f-95f3-acefdff56383)
+
 
 ### 2. Login/Signup
 **Login and signup is done by clerk authentication**
@@ -206,10 +213,8 @@ npm run db:push
 
 # Future Modifications 
  - **Google analytics can be used to track the number of users and helps to analyse the data**
- - **American Express Cards can be added for the premium model**
  - **Voice feature can be added in the answers to improve the interactivity and accessibility**
  - **Admin Dashboard can be made for performing CRUD operations of the questions and challenges with simple UI**
- - **AI Chatbot which answers the questions related to the finance**
  - **Feedback section can be build which collects testimonials from the customers**
 
 
