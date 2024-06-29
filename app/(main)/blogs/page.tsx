@@ -4,7 +4,7 @@ import MySVGImage from './path-to-your-svg-image.svg'; // Import your SVG image
 import Image from 'next/image';
 
 const Page = () => {
-  // Example case studies data
+  // dummy data
   const caseStudies = [
     {
       id: 1,
