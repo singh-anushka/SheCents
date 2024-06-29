@@ -2,8 +2,14 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react'; // Importing the ArrowRight icon from Lucide Icons
 import MySVGImage from './path-to-your-svg-image.svg'; // Import your SVG image
 import Image from 'next/image';
+import ReactGA from 'react-ga4';
+import { useEffect } from 'react';
 
 const Page = () => {
+  useEffect(() => {
+    ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
+  }, []);
+
   // dummy data
   const caseStudies = [
     {

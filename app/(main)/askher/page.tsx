@@ -22,7 +22,9 @@ declare global {
 
 const ChatPage: React.FC = () => {
   return (
+    
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-200 relative p-4">
+    
       <div className="flex w-full flex-col items-center">
         <Image src="/askher.svg" alt="Shop" height={90} width={90} />
         <h1 className="my-6 text-center text-2xl font-bold text-neutral-800">
