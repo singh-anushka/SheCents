@@ -8,12 +8,6 @@ employing a straightforward and interactive user interface.
 - #### [Presentation](https://drive.google.com/file/d/1jdFyVmk5WBM2DYLprDwpdnA7h8HNetPC/view?usp=sharing)
  
 # Screenshots 
-### Google Vertex AI Chatbot 
-**Askher.ai is a chatbot build with the helo of Google vertex AI Agent builder. It provides answers to all the Finance related queries in a simplified manner**
-![image](https://github.com/singh-anushka/SheCents/assets/115483735/f52dde1e-5d92-4b12-8446-585f26f34029)
-![image](https://github.com/singh-anushka/SheCents/assets/115483735/9b54f361-0570-4f6c-8677-c391ea6578b3)
-
-
 
 ### 1. Landing Page 
 **This is the landing page - the first appearance of our website to the user.**
@@ -89,9 +83,10 @@ To ensure users gain more knowledge about the current money moves in case the le
 Any further doubts regarding the practicality of the strategy and learnings given by community leaders in connect or through course modules are users can read other users experience, and post theirs too.
 <img width="1440" alt="Screenshot 2024-05-18 at 10 31 40 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/4685c80d-a1e4-4c5d-a350-c391ed458dc5">
 
-### 9. AskHer
-Any more further personalized doubts and queries can be asked to AskHer, an NLP chatbot.
-<img width="1440" alt="Screenshot 2024-05-18 at 10 32 33 AM" src="https://github.com/singh-anushka/SheCents/assets/93376863/afa60648-ba05-468a-be0b-615bd4c71a8e">
+### 9. Google Vertex AI Chatbot 
+**Askher.ai is a chatbot build with the help of Google vertex AI Agent builder. It provides answers to all the Finance related queries in a simplified manner**
+![image](https://github.com/singh-anushka/SheCents/assets/115483735/f52dde1e-5d92-4b12-8446-585f26f34029)
+![image](https://github.com/singh-anushka/SheCents/assets/115483735/9b54f361-0570-4f6c-8677-c391ea6578b3)
 
 # Local Setup
 1. Clone the project into local device and open terminal inside the corresponding folder
