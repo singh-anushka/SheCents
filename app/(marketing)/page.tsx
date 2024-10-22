@@ -25,7 +25,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <h1 className="text-xl lg:text-3xl font-bold text-neutral-600 max-w-[480px] text-center mb-4">
-            Smart Money Moves for Women, by Women
+            Smart Money Moves
           </h1>
           <ClerkLoading>
             <Loader2 className="h-5 w-5 text-muted-foreground animate-spin" />
